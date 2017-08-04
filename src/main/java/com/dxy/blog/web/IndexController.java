@@ -14,6 +14,7 @@ public class IndexController {
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public ModelAndView index() {
         ModelAndView mav = new ModelAndView();
+        mav.setViewName("index");
         return mav;
     }
 }
